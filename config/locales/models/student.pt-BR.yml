@@ -9,3 +9,16 @@ pt-BR:
         name: Nome
         register_number: Número de registro
         status: Status
+    errors:
+      models:
+        student:
+          attributes:
+            name:
+              blank: Não pode estar vazio
+              too_long: Quantidade de caracteres acima da permitida
+            register_number:
+              blank: Não pode estar vazio
+              too_long: Quantidade de caracteres acima da permitida
+            status:
+              blank: Não pode estar vazio
+              not_an_integer: Preencha com números inteiros
