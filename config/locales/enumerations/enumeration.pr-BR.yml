@@ -1,0 +1,5 @@
+pt-BR:
+  enumerations:
+    default_status:
+      active: Ativo
+      inactive: Inativo

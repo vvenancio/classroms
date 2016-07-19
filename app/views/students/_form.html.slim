@@ -1,0 +1,6 @@
+= simple_form_for @student do |f|
+  = f.input :name
+  = f.input :register_number
+  = f.input :status, collection: student_statuses, include_blank: false
+  
+  = f.submit

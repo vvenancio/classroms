@@ -1,0 +1,18 @@
+.page-header
+  h1= Student.model_name.human(count: 2)
+
+- unless @students.empty?
+  table.table
+    thead
+      tr
+        th= Student.human_attribute_name(:name)
+        th= Student.human_attribute_name(:register_number)
+        th= Student.human_attribute_name(:status)
+        th= t('links.edit', resource: Student.model_name.human(count: 2).downcase)
+    tbody
+      - @students.each do |student|
+        tr
+          td= student.name
+          td= student.register_number
+          td= student.status_humanize
+          th= link_to t('links.edit', resource: Student.model_name.human(count: 1).downcase), edit_student_path(student)

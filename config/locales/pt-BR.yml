@@ -1,0 +1,4 @@
+pt-BR:
+  links:
+    new: Novo %{resource}
+    edit: Editar %{resource}
