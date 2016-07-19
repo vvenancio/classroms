@@ -2,3 +2,7 @@ pt-BR:
   links:
     new: Novo %{resource}
     edit: Editar %{resource}
+  helpers:
+    submit:
+      create: Criar %{model}
+      update: Atualizar %{model}
