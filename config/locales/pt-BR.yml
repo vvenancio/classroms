@@ -2,6 +2,8 @@ pt-BR:
   links:
     new: Novo %{resource}
     edit: Editar %{resource}
+  titles:
+    no_resource: Não há %{resource} no sistema
   helpers:
     submit:
       create: Criar %{model}

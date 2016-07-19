@@ -1,7 +1,11 @@
-.page-header
-  h1= ClassRoom.model_name.human(count: 2)
+- if @class_rooms.empty?
+  .alert.alert-warning role="alert"
+    = t('titles.no_resource', resource: ClassRoom.model_name.human(count: 2).downcase)
 
-- unless @class_rooms.empty?
+- else
+  .page-header
+    h1= ClassRoom.model_name.human(count: 2)
+  
   table.table
     thead
       tr
