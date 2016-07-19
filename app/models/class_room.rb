@@ -4,4 +4,7 @@ class ClassRoom < ActiveRecord::Base
 
   validates :student_id , uniqueness: { scope: :course_id }
   validates :entry_at, presence: true
+
+  delegate :name, to: :student, prefix: true
+  delegate :name, to: :course, prefix: true
 end

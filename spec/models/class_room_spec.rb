@@ -12,4 +12,9 @@ RSpec.describe ClassRoom, type: :model do
     it { is_expected.to belong_to(:course) }
     it { is_expected.to belong_to(:student) }
   end
+
+  context 'with delegations' do
+    it { is_expected.to delegate_method(:name).to(:student).with_prefix(:student) }
+    it { is_expected.to delegate_method(:name).to(:course).with_prefix(:course) }
+  end
 end

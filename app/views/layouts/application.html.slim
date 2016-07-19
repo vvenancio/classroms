@@ -31,7 +31,8 @@ html lang="en"
               li= link_to t('links.new', resource: Student.model_name.human(count: 1).downcase), new_student_path
               li= link_to Course.model_name.human(count: 2), courses_path
               li= link_to t('links.new', resource: Course.model_name.human(count: 1).downcase), new_course_path
-              li= link_to "Link 3", "/path3"
+              li= link_to t('links.new', resource: ClassRoom.model_name.human(count: 1).downcase), new_class_room_path
+              li= link_to ClassRoom.model_name.human(count: 2), class_rooms_path
 
     .container
       .row

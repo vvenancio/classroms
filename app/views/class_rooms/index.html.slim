@@ -1,0 +1,18 @@
+.page-header
+  h1= ClassRoom.model_name.human(count: 2)
+
+- unless @class_rooms.empty?
+  table.table
+    thead
+      tr
+        th= ClassRoom.human_attribute_name(:entry_at)
+        th= ClassRoom.human_attribute_name(:course_id)
+        th= ClassRoom.human_attribute_name(:student_id)
+        th= t('links.edit', resource: ClassRoom.model_name.human(count: 2).downcase)
+    tbody
+      - @class_rooms.each do |class_room|
+        tr
+          td= l(class_room.entry_at)
+          td= class_room.course_name
+          td= class_room.student_name
+          th= link_to t('links.edit', resource: ClassRoom.model_name.human(count: 1).downcase), edit_class_room_path(class_room)
