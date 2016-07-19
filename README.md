@@ -1,11 +1,11 @@
 # Classroom #
----
 
 The world needs IT. So, every school, must use computer systems, to manage their students, courses and classrooms. 
 
 So I decided to develop a system wich will allow anyone, to manage those resources.
 
 ### Usage ###
+---
 
 clone or fork the project
 ```
@@ -33,12 +33,14 @@ rails s
 ```
 
 ### Requirements ###
+---
 
 ```
 Ruby 2+, Rails 4+
 ```
 
 ### Who do I talk to? ###
+---
 
 * Send an email *to vinicius.venancio@live.com*
 
