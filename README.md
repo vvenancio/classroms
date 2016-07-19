@@ -1,6 +1,7 @@
 # Classroom #
 
-The world needs IT. So, every school, must use computer systems, to manage their students, courses and classrooms. 
+The world needs IT. 
+Every school must use computer systems to manage their students, courses and classrooms. 
 
 So I decided to develop a system wich will allow anyone, to manage those resources.
 
@@ -20,7 +21,7 @@ cp database.yml ./database.yml.sample
 
 - now you can configure your database settings in `database.yml`
 
-create database, its tables and populates it with items
+create database and its tables
 
 ```
 rake db:create db:migrate
