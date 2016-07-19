@@ -1,0 +1,24 @@
+pt-BR:
+  activerecord:
+    models:
+      course:
+        one: Curso
+        other: Cursos
+    attributes:
+      course:
+        name: Nome
+        description: Descrição
+        status: Status
+    errors:
+      models:
+        course:
+          attributes:
+            name:
+              blank: Não pode estar vazio
+              too_long: Quantidade de caracteres acima da permitida
+            description:
+              blank: Não pode estar vazio
+              too_long: Quantidade de caracteres acima da permitida
+            status:
+              blank: Não pode estar vazio
+              not_an_integer: Preencha com números inteiros

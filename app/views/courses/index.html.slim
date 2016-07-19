@@ -1,0 +1,18 @@
+.page-header
+  h1= Course.model_name.human(count: 2)
+
+- unless @courses.empty?
+  table.table
+    thead
+      tr
+        th= Course.human_attribute_name(:name)
+        th= Course.human_attribute_name(:description)
+        th= Course.human_attribute_name(:status)
+        th= t('links.edit', resource: Course.model_name.human(count: 2).downcase)
+    tbody
+      - @courses.each do |course|
+        tr
+          td= course.name
+          td= course.description
+          td= course.status_humanize
+          th= link_to t('links.edit', resource: Course.model_name.human(count: 1).downcase), edit_course_path(course)

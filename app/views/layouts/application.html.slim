@@ -27,8 +27,10 @@ html lang="en"
             span.icon-bar
           .navbar-collapse.collapse.navbar-responsive-collapse
             ul.nav.navbar-nav
+              li= link_to Student.model_name.human(count: 2), students_path
               li= link_to t('links.new', resource: Student.model_name.human(count: 1).downcase), new_student_path
-              li= link_to "Link 2", "/path2"
+              li= link_to Course.model_name.human(count: 2), courses_path
+              li= link_to t('links.new', resource: Course.model_name.human(count: 1).downcase), new_course_path
               li= link_to "Link 3", "/path3"
 
     .container
