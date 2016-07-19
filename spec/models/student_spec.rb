@@ -9,4 +9,8 @@ RSpec.describe Student, type: :model do
     it { is_expected.to validate_presence_of(:status) }
     it { is_expected.to validate_numericality_of(:status).only_integer }
   end
+
+  context 'with association' do
+    it { is_expected.to have_many(:class_rooms) }
+  end
 end
